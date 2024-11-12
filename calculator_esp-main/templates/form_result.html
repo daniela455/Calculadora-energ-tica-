@@ -1,0 +1,49 @@
+<!-- Crear una página que emita los datos del usuario -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+          name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../../static/css/style.css"> 
+        <title>Calculadora de eficiencia energética para hogares inteligentes</title>
+      </head>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__text">
+          <h1>Calcule la eficiencia energética de su hogar</h1>
+          <p>Tome la iniciativa y resuelva el problema del consumo excesivo de energía</p>
+        </div>
+      </header>
+    {% block content %}
+
+    <h2>Gracias por rellenar el formulario</h2>
+    <h3>Nombre: {{ name }}</h3>
+    <h3>Correo electronico: {{ email }}</h3>
+    <h3>Fecha: {{ date }}</h3>
+    <h3>Direccion: {{ address }}</h3>
+
+{% endblock %}
+<style>
+h2 {
+    color: lightgreen;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    margin: 80px;
+}
+body {
+    background-color: whitesmoke 
+}
+h3 {
+    font-size: medium;
+    margin: 40px;
+}
+</style>
+</body>
+</html>
